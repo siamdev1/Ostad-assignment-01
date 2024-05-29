@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* Main Body Start */
+.main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    width:100%;
+}
+
+/* Main Body End */
+
+/* Sidebar Start */
+#website-sidebar{
+    width: 20%;
+    height: 100vh;
+    background-color: #fe6347;
+    color: #fff;
+    position: relative;
+}
+.sidebar-content{
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-color:#fe6347 ;
+    padding: 30px;
+}
+
+.sidebar-content h1{
+    margin-top: 140px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.sidebar-content a{
+    color:#fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/* Menu Animation S0tart */
+.sidebar-content ul{
+    margin-top: 50px;
+}
+.sidebar-content ul * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    width: 50%;
+  }
+.sidebar-content ul li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1.5em;
+    padding: 0;
+  }
+.sidebar-content ul a {
+    padding: 0.3em 0;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+  }
+.sidebar-content ul a:before,
+.sidebar-content ul a:after {
+    height: 3px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: #fff;
+    width: 0;
+  }
+.sidebar-content ul a:before {
+    top: 0;
+    left: 0;
+  }
+.sidebar-content ul a:after {
+    bottom: 0;
+    right: 0;
+  }
+.sidebar-content ul a:hover,
+.sidebar-content ul .current a {
+    color: #ffffff;
+  }
+.sidebar-content ul a:hover:before,
+.sidebar-content ul .current a:before,
+.sidebar-content ul a:hover:after,
+.sidebar-content ul .current a:after {
+    width: 100%;
+    }
+
+.sidebar-content ul a:hover{
+    background-color: #ffffff20;
+}
+
+/* Menu Animation End */
+
+/* Sidebar End */
+
+/* Main Area Start */
+.main-area{
+    width: 80%;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+.website-header{
+    font-size: 65px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+/* Universal Section Title Start */
+.section-title{
+    font-size: 49px;
+    color: #fe6347;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.section-title::after{
+    content: "";
+    display: block;
+    width: 75px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #fe6347;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/* Universal Section Title End */
+
+/* showcase-section-gallery */
+
+.showcase-section-gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.showcase-section-gallery img{
+    width: 50%;
+    padding: 15px 15px 15px 0px;
+}
+
+/* services start */
+
+/* Universal P Tag */
+p{
+    font-size: 19px;
+    text-align: justify;
+    padding-right: 50px;
+    line-height: 1.5em;
+}
+
+
+/* services end */
+
+/* design section start */
+.design-team-section-title{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* team-members start */
+.team-members{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.team-members-details{
+    width: 32% ;
+    background-color: #f1f1f1;
+    padding-bottom: 40px;
+}
+
+.team-members-details img{
+    width: 100%;
+}
+
+.team-members-details h1{
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 20px;
+    line-height: 2em;
+}
+
+.team-members-details h2{
+    color: #919191;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+.team-members-details p{
+    font-size: 19px;
+    font-weight: 400;
+    padding-left: 20px;
+    text-align: left;
+
+}
+/* team-members end */
+
+/* design section end */
+
+/* Package Start */
+.package-contain{
+    display: flex;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.package-items-container{
+    width: 50%;
+    padding: 20px;
+}
+.package-items-container ul li{
+    text-align: center;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border:solid #e0e0e0;
+    border-width: 1px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}
+.package-items-container ul li:nth-child(7){
+    font-weight:500;
+    font-size: 22px;
+}
+.package-items-container ul li:nth-child(9){
+    display: none;
+    color: #656565;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px;
+}
+.package-items-container ul li:nth-child(8){
+    border-bottom: none;
+}
+
+#basic-package ul li:nth-child(1){
+    background-color: #616161;
+    color:#fff;
+    border:none;
+}
+
+#pro-package ul li:nth-child(1){
+    background-color: #fe6347;
+    color: #fff;
+    border: none;
+}
+
+.package-items-container ul li button{
+    background-color: #fff;
+    border: none;
+    padding: 20px 30px;
+    font-size: 19px;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+.package-items-container ul li button:hover{
+    background-color: #fe6347;
+    color: #fff;
+}
+/* Package End */
+
+/* contact start */
+
+#contact{
+    margin-bottom: 200px;
+}
+#contact p{
+    margin-bottom: 20px;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#contact form label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact form input,
+#contact form textarea{
+    border:1px solid #d9d9d9;
+    padding: 10px;
+    font-size: 19px;
+}
+#contact form input[type=submit]{
+    background-color: #fe6347;
+    margin-top: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* contact end */
+/* Footer */
+footer{
+    width: 100%;
+    height: 135px;
+    background-color: #f1f1f1;
+    color: #919191;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20%;
+}
+/* Main Area End */
